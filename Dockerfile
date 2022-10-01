@@ -11,7 +11,7 @@ COPY prisma ./prisma/
 RUN npm install --force
 COPY . .
 
-RUN npm build
+RUN npm run build
 
 FROM node:16 AS runner
 # Copy the app code to the runner container
